@@ -1,0 +1,23 @@
+<div class="visualization-container">
+    <h2>Real-Time Transaction Aggregates</h2>
+    <p *ngIf="transactions.length > 0">Last Updated: {{ transactions[transactions.length - 1]?.id }}</p>
+    <div #chart class="chart-container"></div>
+
+    <div>
+        <h2>Fraudulent Transactions</h2>
+        <ul>
+          <li *ngFor="let txn of filteredTransactions">
+            {{ txn.id }} - ${{ txn.amount }} - {{ txn.region }}
+          </li>
+        </ul>
+      
+        <h2>Aggregates by Region</h2>
+        <ul>
+          <li *ngFor="let region of aggregates | keyvalue">
+            {{ region.key }}: ${{ region.value }}
+          </li>
+        </ul>
+      </div>
+      
+  </div>
+  

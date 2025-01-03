@@ -1,0 +1,38 @@
+.visualization-container {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .chart-container {
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .legend {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+  }
+  
+  .legend-color {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    display: inline-block;
+    border: 1px solid #000;
+  }
+  
+  .legend-text {
+    font-size: 14px;
+  }
+  
